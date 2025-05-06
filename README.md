@@ -6,6 +6,7 @@ Projeto de testes automatizados para o sistema de hospedagem **AirBug**, inspira
 
 
 ![image](https://github.com/user-attachments/assets/0be1e8dc-8be8-4bcb-b38b-d39ca01b29eb)
+Projeto AirBug gerado por IA no repositório, caso link esteja indisponível.
 
 ---
 
