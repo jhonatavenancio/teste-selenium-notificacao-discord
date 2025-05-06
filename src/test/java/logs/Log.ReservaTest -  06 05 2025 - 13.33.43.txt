@@ -1,0 +1,85 @@
+ 06 05 2025 - 13.33.46 - TESTE REALIZADO - Falha ao Reservar
+ 06 05 2025 - 13.33.46 - Pegar elemento ID: reserve-btn-5
+ 06 05 2025 - 13.33.46 - Clicar em elemento: ID: reserve-btn-5
+ 06 05 2025 - 13.33.56 - Pegar elemento ID: guest-name
+ 06 05 2025 - 13.33.56 - Escrever 'Nicole de Borba' em elemento: ID: guest-name
+ 06 05 2025 - 13.33.56 - Pegar elemento ID: guest-count
+ 06 05 2025 - 13.33.56 - Clicar em elemento: ID: guest-count
+ 06 05 2025 - 13.33.56 - Esperar 300ms
+ 06 05 2025 - 13.33.57 - Pegar elemento CSS: #guest-count > option:nth-child(1)
+ 06 05 2025 - 13.33.57 - Clicar em elemento: CSS: #guest-count > option:nth-child(1)
+ 06 05 2025 - 13.33.57 - Pegar elemento CSS: #root > div > div > div > form > button
+ 06 05 2025 - 13.33.57 - Clicar em elemento: CSS: #root > div > div > div > form > button
+ 06 05 2025 - 13.33.57 - Pegar elemento ID: card-number
+ 06 05 2025 - 13.33.57 - Escrever '6007228751263994' em elemento: ID: card-number
+ 06 05 2025 - 13.33.57 - Pegar elemento ID: card-expiry
+ 06 05 2025 - 13.33.57 - Escrever '11/27' em elemento: ID: card-expiry
+ 06 05 2025 - 13.33.58 - Pegar elemento ID: card-cvv
+ 06 05 2025 - 13.33.58 - Escrever '747' em elemento: ID: card-cvv
+ 06 05 2025 - 13.33.58 - Pegar elemento ID: pay-button
+ 06 05 2025 - 13.33.58 - Clicar em elemento: ID: pay-button
+ 06 05 2025 - 13.33.58 - Esperar 300ms
+ 06 05 2025 - 13.33.58 - 🏁 Teste finalizado: falhaAoReservar() | Duração: 12530 ms
+ 06 05 2025 - 13.34.00 - Notificação enviada ao Discord: 204
+ 06 05 2025 - 13.34.01 - TESTE REALIZADO - Reserva Indisponível
+ 06 05 2025 - 13.34.01 - Pegar elemento ID: reserve-btn-3
+ 06 05 2025 - 13.34.01 - Clicar em elemento: ID: reserve-btn-3
+ 06 05 2025 - 13.34.02 - Esperar 300ms
+ 06 05 2025 - 13.34.02 - 🏁 Teste finalizado: reservaIndisponivel() | Duração: 1169 ms
+ 06 05 2025 - 13.34.03 - Notificação enviada ao Discord: 204
+ 06 05 2025 - 13.34.05 - TESTE REALIZADO - Reserva Confirmada
+ 06 05 2025 - 13.34.05 - Pegar elemento ID: reserve-btn-1
+ 06 05 2025 - 13.34.05 - Clicar em elemento: ID: reserve-btn-1
+ 06 05 2025 - 13.34.05 - Pegar elemento ID: guest-name
+ 06 05 2025 - 13.34.05 - Escrever 'Nicole de Borba' em elemento: ID: guest-name
+ 06 05 2025 - 13.34.06 - Pegar elemento ID: guest-count
+ 06 05 2025 - 13.34.06 - Clicar em elemento: ID: guest-count
+ 06 05 2025 - 13.34.07 - Esperar 300ms
+ 06 05 2025 - 13.34.08 - Pegar elemento CSS: #guest-count > option:nth-child(1)
+ 06 05 2025 - 13.34.08 - Clicar em elemento: CSS: #guest-count > option:nth-child(1)
+ 06 05 2025 - 13.34.08 - Pegar elemento CSS: #root > div > div > div > form > button
+ 06 05 2025 - 13.34.08 - Clicar em elemento: CSS: #root > div > div > div > form > button
+ 06 05 2025 - 13.34.08 - Pegar elemento ID: card-number
+ 06 05 2025 - 13.34.08 - Escrever '6007228751263994' em elemento: ID: card-number
+ 06 05 2025 - 13.34.08 - Pegar elemento ID: card-expiry
+ 06 05 2025 - 13.34.08 - Escrever '11/27' em elemento: ID: card-expiry
+ 06 05 2025 - 13.34.08 - Pegar elemento ID: card-cvv
+ 06 05 2025 - 13.34.08 - Escrever '747' em elemento: ID: card-cvv
+ 06 05 2025 - 13.34.08 - Pegar elemento ID: pay-button
+ 06 05 2025 - 13.34.08 - Clicar em elemento: ID: pay-button
+ 06 05 2025 - 13.34.08 - Esperar 300ms
+ 06 05 2025 - 13.34.09 - Validar notificação no ID: reservation-confirmation com texto esperado: 'Reserva confirmada!'
+ 06 05 2025 - 13.34.09 - Pegar elemento ID: reservation-confirmation
+ 06 05 2025 - 13.34.09 - Notificação validada com sucesso: 'Reserva confirmada!'
+ 06 05 2025 - 13.34.09 - 🏁 Teste finalizado: reservaConfirmada() | Duração: 3870 ms
+ 06 05 2025 - 13.34.09 - Notificação enviada ao Discord: 204
+ 06 05 2025 - 13.34.11 - TESTE REALIZADO - Conversa com Anfitrião
+ 06 05 2025 - 13.34.11 - Pegar elemento ID: reserve-btn-1
+ 06 05 2025 - 13.34.11 - Clicar em elemento: ID: reserve-btn-1
+ 06 05 2025 - 13.34.12 - Pegar elemento ID: guest-name
+ 06 05 2025 - 13.34.12 - Escrever 'Nicole de Borba' em elemento: ID: guest-name
+ 06 05 2025 - 13.34.13 - Pegar elemento ID: guest-count
+ 06 05 2025 - 13.34.13 - Clicar em elemento: ID: guest-count
+ 06 05 2025 - 13.34.13 - Esperar 300ms
+ 06 05 2025 - 13.34.14 - Pegar elemento CSS: #guest-count > option:nth-child(1)
+ 06 05 2025 - 13.34.14 - Clicar em elemento: CSS: #guest-count > option:nth-child(1)
+ 06 05 2025 - 13.34.14 - Pegar elemento CSS: #root > div > div > div > form > button
+ 06 05 2025 - 13.34.14 - Clicar em elemento: CSS: #root > div > div > div > form > button
+ 06 05 2025 - 13.34.14 - Pegar elemento ID: card-number
+ 06 05 2025 - 13.34.14 - Escrever '6007228751263994' em elemento: ID: card-number
+ 06 05 2025 - 13.34.14 - Pegar elemento ID: card-expiry
+ 06 05 2025 - 13.34.14 - Escrever '11/27' em elemento: ID: card-expiry
+ 06 05 2025 - 13.34.14 - Pegar elemento ID: card-cvv
+ 06 05 2025 - 13.34.14 - Escrever '747' em elemento: ID: card-cvv
+ 06 05 2025 - 13.34.14 - Pegar elemento ID: pay-button
+ 06 05 2025 - 13.34.14 - Clicar em elemento: ID: pay-button
+ 06 05 2025 - 13.34.14 - Esperar 300ms
+ 06 05 2025 - 13.34.15 - Validar notificação no ID: reservation-confirmation com texto esperado: 'Reserva confirmada!'
+ 06 05 2025 - 13.34.15 - Pegar elemento ID: reservation-confirmation
+ 06 05 2025 - 13.34.15 - Notificação validada com sucesso: 'Reserva confirmada!'
+ 06 05 2025 - 13.34.16 - Pegar elemento ID: chat-input
+ 06 05 2025 - 13.34.16 - Escrever 'Olá, chego em 3 horas!' em elemento: ID: chat-input
+ 06 05 2025 - 13.34.16 - Pegar elemento ID: chat-send-button
+ 06 05 2025 - 13.34.16 - Clicar em elemento: ID: chat-send-button
+ 06 05 2025 - 13.34.16 - 🏁 Teste finalizado: conversarComAnfitriao() | Duração: 5032 ms
+ 06 05 2025 - 13.34.17 - Notificação enviada ao Discord: 204
