@@ -4,7 +4,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class DisparoNotificacaoDiscord {
-    private static final String WEBHOOK_URL = "https://discordapp.com/api/webhooks/1369350232462332026/-ICvfEbhBxJPsSpfSJEvD0D5vwLnbmomLvjNTJ-HITG7IVwr5AjuoqbNmOZ4NciNzNva";
+    private static final String WEBHOOK_URL = "SEU_WEBHOOK";
 
     public static void sendMessage(String message) {
         try {
