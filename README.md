@@ -1,94 +1,96 @@
-# 🐞 AirBug - Testes Automatizados 
+# 🤖 Sistema de Disparo Automatizado com Notificações no Discord
 
-Projeto de testes automatizados para o sistema de hospedagem **AirBug**, inspirado em plataformas como o Airbnb. Os testes têm como objetivo validar a experiência do usuário em cenários de reserva e comunicação com anfitriões, garantindo a confiabilidade da aplicação hospedada em:
+Este sistema de testes foi **gerado por inteligência artificial** com o objetivo de testar funcionalidades modernas de automação e integração, como:
 
+- Execução automatizada de testes (Selenium + JUnit)
+- Envio de mensagens para **Discord** via Webhook
+- Uso de dados dinâmicos com **Faker**
+- Relatórios automatizados e logs centralizados
+
+> O foco principal do projeto é simular um sistema web de hospedagem e validar o sistema em um teste regressivo com notificações de status para acompanhamento no Discord.
 🔗 [Link do airBug no Netflify](https://shiny-tanuki-037144.netlify.app)
-
+---
 
 ![image](https://github.com/user-attachments/assets/0be1e8dc-8be8-4bcb-b38b-d39ca01b29eb)
-Projeto AirBug gerado por IA no repositório, caso link esteja indisponível.
+
+## 📦 Principais Funcionalidades
+
+✅ Execução de testes automatizados com Java + Selenium  
+💬 Notificações automáticas no Discord ao iniciar e finalizar testes
+🔁 Geração de dados falsos realistas com Java Faker  
+🧪 Estrutura modular baseada em Page Object Model  
+📊 Logs organizados por execução/teste  
+
 
 ---
 
-## 📂 Estrutura do Projeto de testes automatizados
+## 📂 Estrutura do Projeto
 
 ```
-airBug/
+
+automated-system/
 ├── src/
 │   ├── main/java/
-│   │   ├── data/                 # Dados de acesso e informações de teste (dados fake com Faker)
-│   │   ├── drivers/              # Configuração e controle do navegador (WebDriver)
-│   │   ├── pages/                # Page Objects representando cada tela do sistema
-│   │   └── utils/                # Utilitários como ações genéricas, logs e disparo no Discord
+│   │   ├── data/                 # Dados fictícios de acesso (gerados com Faker)
+│   │   ├── drivers/              # WebDriver para controle do navegador
+│   │   ├── pages/                # Representação das telas da aplicação (Page Objects)
+│   │   └── utils/                # Utilitários, incluindo envio de notificações ao Discord
 │   └── test/java/
-│       ├── logs/                 # Geração de logs por classe de teste
-│       └── tests/                # Casos de teste com JUnit5
-```
+│       ├── logs/                 # Armazenamento dos logs por classe de teste
+│       └── tests/                # Casos de testes com JUnit5
+
+````
 
 ---
 
-## 🧪 Tecnologias Utilizadas
+## 🔧 Tecnologias Utilizadas
 
-* **Java 11**
-* **Selenium WebDriver**
-* **JUnit 5 (Jupiter)**
-* **Java Faker** – Geração de dados dinâmicos (nome do hóspede, cartão, etc.)
-* **OkHttp** – Envio dos resultados para **Discord Webhook**
-* **Maven** – Gerenciamento de dependências e build
-* **Padrão Page Object Model (POM)**
+- **Java 11**
+- **Selenium WebDriver**
+- **JUnit 5 (Jupiter)**
+- **Java Faker** – Geração de dados realistas para os testes
+- **OkHttp** – Envio de notificações para o Discord via Webhook
+- **Maven** – Gerenciamento de dependências
+- **Page Object Model (POM)** – Arquitetura organizada de testes
 
 ---
 
-## 🚀 Como Executar os Testes
+## 🧪 Como Executar os Testes
 
-### 1. Clone o repositório:
+### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/airbug-teste-automatizado.git
-cd airbug-teste-automatizado
-```
+git clone https://github.com/seu-usuario/sistema-disparo-discord.git
+cd sistema-disparo-discord
+````
 
-### 2. Execute os testes com Maven:
+### 2. Execute os testes com Maven
 
 ```bash
 mvn clean test
 ```
 
-> Os testes são executados automaticamente no navegador configurado (modo headless ativável via `Access.java`), e os resultados são enviados para um canal do Discord, se configurado.
-
+> A execução ocorre automaticamente no navegador configurado (com suporte a modo `headless`). As mensagens são enviadas ao Discord antes, durante e depois da execução (através do webhook configurado).
 ---
+
 
 ## 💬 Notificações via Discord
 
-O projeto possui uma funcionalidade para enviar os resultados dos testes (início e finalização) diretamente para um canal do Discord via Webhook, para equipe acompanhar a execução dos testes. Para habilitar:
-
-1. Configure seu Webhook no arquivo `DisparoNotificacaoDiscord.java`.
-2. Certifique-se de que o método `@ExtendWith(DisparoResultadoDiscord.class)` esteja presente na classe de teste.
+A automação é integrada com Discord para **alertar a equipe sobre o status da execução dos testes**, ideal para ser executado integrado com pipelines de CI/CD.
 
 ![image](https://github.com/user-attachments/assets/d0d7fd0c-6fbf-48eb-99f4-70257641a218)
-
-
----
-
-## 📄 Exemplos de Testes Automatizados
-
-A classe `ReservaTest.java` cobre os seguintes cenários:
-
-* ✅ Reserva confirmada com dados válidos
-* 💬 Início de conversa com o anfitrião após reserva
-* ❌ Reserva indisponível por manutenção
-* 🚫 Falha ao reservar propriedades não disponíveis
-
 ![image](https://github.com/user-attachments/assets/2812878d-2465-4777-bb54-305c2db324ee)
 
+### ✔️ Como ativar:
 
----
+1. Crie um **Webhook do Discord** no seu servidor.
 
-## 🧠 Boas práticas adotadas
+2. Adicione o link no arquivo:
 
-* **Separação clara de responsabilidades** usando POM
-* **Reutilização de componentes** (Page Objects, Actions, Drivers)
-* **Logs centralizados** por classe de teste
-* **Execução com ou sem interface gráfica** (`headless` configurável)
-* **Notificações externas integradas** (Discord)
+   ```
+   src/main/java/utils/DisparoNotificacaoDiscord.java
+   ```
+   
+
+
 
